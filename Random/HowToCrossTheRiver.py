@@ -9,11 +9,11 @@ sack of corn, or the goose will eat the corn. How does the farmer get everything
 across the river?
 
 	"""
-return Intro
+	return Intro
 
 def die():
 	print('Game Over')
-	break
+
 
 def pickSomething():
 	print('Wanna pick something before you go back?')
@@ -23,15 +23,7 @@ def pickedItem():
 	return PickedItem
 def main():
 
-	print(introduction())
-	Nilai = pickedItem()
+# Project pending
 
-	if Nilai == "Goose":
-		print("Goose is on the cross of the river.")
-		if Nilai == "No":
-			print("Farmer is on the start point")
-			Nilai = PickedItem()
-
-	
 if __name__ == '__main__':
-	introduction()
+	main()
