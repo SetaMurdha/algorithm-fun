@@ -2,13 +2,18 @@ game = [[0,0,0],
 		[0,0,0],
 		[0,0,0]]
 
-print("   a  b  c")
-for count, row in enumerate(game):
-	print(count, row)
+def field_board(row=0, collumn=0, result=0, just_display  = False):
+	print("   a  b  c")
+	if not just_display:
+		game[row][collumn] = result
+	for count, row in enumerate(game):
+		print(count, row)
 
+field_board(1,1,5)
 
-game[0][2] = 1
+field_board(1,2,5)
 
-print("   a  b  c")
-for count, row in enumerate(game):
-	print(count, row)
+field_board(1,0,5)
+
+field_board(just_display = True)
+
